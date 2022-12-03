@@ -67,12 +67,49 @@ body{
 
 
 .header{
-  background-color: #98afc7;
+  background-color: #43bfc7;
+  color:#0909ff;
+}
+
+.count{
+  font-family:jameel noori nastaleeq regular;
+  color: #0909ff;
+  font-size: 20px;
+}
+
+.det{
+ font-family: jameel noori nastaleeq regular;
+}
+
+.det1{
+  background-color: #43bfc7;
+  color: #0909ff;
+  font-size: 40px;
+}
+
+.det2{
+  font-size: 20px;
+  color: #43bfc7;
+}
+
+.word{
+  color: #3f00ff;
+}
+
+.user{
+  background-color: #43bfc7;
   color: #0909ff;
 }
 
-
-
-
-
+.name{
+  font-family: jameel noori nastaleeq regular;
+  font-size: 30px;
+  color:#0909ff;
+  width: 100px;
+  background-color: #43bfc7;
+  border-radius: 10px;
   
+  
+  
+  
+}

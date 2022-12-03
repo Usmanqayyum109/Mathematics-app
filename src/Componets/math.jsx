@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Header from './Header';
+import Layout from './Layout';
 
 function Test () {
 
@@ -9,17 +11,19 @@ function Test () {
     const [answer,setAnswer] = useState(4);
     const [put,setPut] = useState();
     const [answerDetail,setAnswerDetail] = useState();
-    // const [tQuestion,setTQuestion] = useState(1);
-    // const [rQuestion,setRQuestion] = useState(0);
-    // const [wQuestion,setWQuestion] = useState(0);
-    // const [cAnswer,setCAnswer] = useState(true);
+    const [tQuestion,setTQuestion] = useState(1);
+    const [rQuestion,setRQuestion] = useState(0);
+    const [wQuestion,setWQuestion] = useState(0);
+    const [cAnswer,setCAnswer] = useState(true);
+    // const [detail,setDetail] = useState();
 
     const expression = ["+","-","×","÷"];
 
     function work(x) {
       setAnswerDetail("");
       setPut("");
-        // setTQuestion(tQuestion + 1);
+      setCAnswer(true);
+        setTQuestion(tQuestion + 1);
         if (x === 0) {
           setNumber(expression[0]);
         //   setEqual("="); 
@@ -75,27 +79,37 @@ function Test () {
             }
            
         }
+        // function end(){
+        //     setDetail("How are you ?");
             
-            
+        //   }  
       
         function DisplayResult(studentAnswer, ourAnswer){
-                // if (cAnswer === true){
-                //     setCAnswer(false);
+          // setAnswer("");
+                if (cAnswer === true){
+                    setCAnswer(false);
                 
                  if (parseInt(studentAnswer) === ourAnswer){
                    setAnswerDetail("CONGRATULATIONS!  Your answer is right.");
                     
-                    // setRQuestion(rQuestion + 1);
+                    setRQuestion(rQuestion + 1);
                  } else {
                     setAnswerDetail(`Your Answer is WRONG, Right Answer is ${answer}.`);
-                    // setWQuestion(wQuestion + 1);
+                    setWQuestion(wQuestion + 1);
                  }
-                // }
+                } 
+                  
+                
+               
                 } 
         
-  
+                
 return (
 <div>
+  <Header />
+  <div>
+    
+  </div>
    <div >
     <div >
     <h1 className='number'>{fNumber}<br />{lNumber}</h1>
@@ -113,13 +127,15 @@ return (
     <button className='button1' onClick ={() => {DisplayResult(put,  answer)}}>Check Your Answer </button>
     </div>
         <h1 className='answer'>{answerDetail}</h1>
-        {/* <div>
-        <h2>Total Question: {tQuestion}</h2>    
+        <div className='count'>
+        <h2 >Total Question: {tQuestion}</h2>    
         <h4>Total Right Answers: {rQuestion}</h4> 
         <h4>Total Wrong Answers: {wQuestion}</h4>       
-        </div> */}
-        
-   
+        </div>
+      <div><Layout /></div>
+      {/* <div>
+       <button >Details</button>
+      </div> */}
     </div>
 
 
