@@ -1,7 +1,7 @@
 {
   "main.css": "/Mathematics-app/static/css/main.50470459.chunk.css",
-  "main.js": "/Mathematics-app/static/js/main.8723ac08.chunk.js",
-  "main.js.map": "/Mathematics-app/static/js/main.8723ac08.chunk.js.map",
+  "main.js": "/Mathematics-app/static/js/main.e61191ed.chunk.js",
+  "main.js.map": "/Mathematics-app/static/js/main.e61191ed.chunk.js.map",
   "static/js/1.e45e0075.chunk.js": "/Mathematics-app/static/js/1.e45e0075.chunk.js",
   "static/js/1.e45e0075.chunk.js.map": "/Mathematics-app/static/js/1.e45e0075.chunk.js.map",
   "static/js/2.c9e04fcb.chunk.js": "/Mathematics-app/static/js/2.c9e04fcb.chunk.js",
@@ -10,6 +10,6 @@
   "runtime~main.js.map": "/Mathematics-app/static/js/runtime~main.2c6bb2a6.js.map",
   "static/css/main.50470459.chunk.css.map": "/Mathematics-app/static/css/main.50470459.chunk.css.map",
   "index.html": "/Mathematics-app/index.html",
-  "precache-manifest.bf4d2952b6ab7a86f4ba5eea7b62197e.js": "/Mathematics-app/precache-manifest.bf4d2952b6ab7a86f4ba5eea7b62197e.js",
+  "precache-manifest.367ed21db5b56867a0e1930393fdb892.js": "/Mathematics-app/precache-manifest.367ed21db5b56867a0e1930393fdb892.js",
   "service-worker.js": "/Mathematics-app/service-worker.js"
 }
